@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div>
+    <span class="id">{{currentWord.id}}</span><span class="russian">. {{currentWord.russian}}</span></div>
+  <div *ngIf='!wasAnswered; else fullWord'>{{currentWord.english | english}}</div>
+  <ng-template #fullWord>
+    <div>{{currentWord.english}}</div>
+  </ng-template>
+  <div class="input-wrapper">
+    <input type="text"
+           #answer
+           (keyup.enter) = "onEnter(answer.value)"
+           (keyup) = "onKeyUp()"
+    ><span>  {{inputLength}}</span>
+    <div class="buttons">
+      <button *ngIf="!wasAnswered" (click)="checkWord(answer.value)">Check</button>
+      <button *ngIf="wasAnswered" (click)="nextWord()">Next word</button>
+    </div>
+  </div>
+  <div class="correct" *ngIf="correct">Correct!</div>
+  <div class="mistake" *ngIf="mistake">Mistake :(</div>
+  <div class="stats">
+    <div>Learned - {{learned}}</div>
+    <div>Learned new - {{learnedNew}}</div>
+    <div>On repeat - {{onRepeat}}</div>
+    <div>Learned new + On repeat - {{lnor}}</div>
+    <div>In queue - {{queue}}</div>
+    <div>In progress - {{inProgress}}</div>
+    <div>Not checked - {{notChecked}}</div>
+    <div>Success - {{success}}</div>
+    <div>R Coefficient - {{rCoefficient}}</div>
+  </div>
+</div>
