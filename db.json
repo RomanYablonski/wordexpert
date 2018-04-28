@@ -1383,7 +1383,7 @@
     {
       "english": "arduous",
       "russian": "сложный, труднодоступный, напряжённый (о деятельности)",
-      "status": "not-checked",
+      "status": "queue",
       "id": 226
     },
     {
@@ -1835,7 +1835,7 @@
     {
       "english": "authorize",
       "russian": "уполномочивать, оправдывать, давать право \nautumn",
-      "status": "not-checked",
+      "status": "queue",
       "id": 300
     },
     {
@@ -2512,7 +2512,7 @@
     {
       "english": "billboard",
       "russian": "доска объявлений, афиша",
-      "status": "not-checked",
+      "status": "queue",
       "id": 410
     },
     {
@@ -2722,7 +2722,7 @@
     {
       "english": "body",
       "russian": "тело",
-      "status": "not-checked",
+      "status": "learned",
       "id": 444
     },
     {
@@ -3603,7 +3603,7 @@
     {
       "english": "caution",
       "russian": "осторожность, предусмотрительность",
-      "status": "not-checked",
+      "status": "learned",
       "id": 588
     },
     {
@@ -5178,7 +5178,7 @@
     {
       "english": "convince",
       "russian": "убеждать",
-      "status": "not-checked",
+      "status": "queue",
       "id": 841
     },
     {
@@ -6254,7 +6254,7 @@
     {
       "english": "denote",
       "russian": "означать",
-      "status": "not-checked",
+      "status": "queue",
       "id": 1015
     },
     {
@@ -9090,7 +9090,7 @@
     {
       "english": "fate",
       "russian": "судьба, удел",
-      "status": "not-checked",
+      "status": "queue",
       "id": 1474
     },
     {
@@ -9258,7 +9258,7 @@
     {
       "english": "fellow",
       "russian": "товарищ или просто чувак",
-      "status": "not-checked",
+      "status": "learned",
       "id": 1501
     },
     {
@@ -9984,7 +9984,7 @@
     {
       "english": "freak",
       "russian": "чудной человек",
-      "status": "not-checked",
+      "status": "queue",
       "id": 1619
     },
     {
@@ -10083,7 +10083,7 @@
     {
       "english": "fry",
       "russian": "жарить",
-      "status": "not-checked",
+      "status": "learned",
       "id": 1635
     },
     {
@@ -11027,7 +11027,7 @@
     {
       "english": "hard",
       "russian": "усердный (о работе)",
-      "status": "not-checked",
+      "status": "learned",
       "id": 1790
     },
     {
@@ -12763,7 +12763,7 @@
     {
       "english": "intimidation",
       "russian": "запугивание",
-      "status": "not-checked",
+      "status": "queue",
       "id": 2071
     },
     {
@@ -14435,7 +14435,7 @@
     {
       "english": "math",
       "russian": "математика",
-      "status": "not-checked",
+      "status": "learned",
       "id": 2346
     },
     {
@@ -14701,7 +14701,7 @@
     {
       "english": "midnight",
       "russian": "полночь",
-      "status": "not-checked",
+      "status": "learned",
       "id": 2389
     },
     {
@@ -15903,7 +15903,7 @@
     {
       "english": "opinion",
       "russian": "мнение",
-      "status": "not-checked",
+      "status": "learned",
       "id": 2587
     },
     {
@@ -16425,7 +16425,7 @@
     {
       "english": "pastime",
       "russian": "времяпрепровождение",
-      "status": "not-checked",
+      "status": "queue",
       "id": 2671
     },
     {
@@ -17834,7 +17834,7 @@
     {
       "english": "prospective",
       "russian": "будущий, предполагаемый",
-      "status": "not-checked",
+      "status": "queue",
       "id": 2902
     },
     {
@@ -18329,7 +18329,7 @@
     {
       "english": "ratio",
       "russian": "отношение, пропорция",
-      "status": "not-checked",
+      "status": "queue",
       "id": 2983
     },
     {
@@ -18407,7 +18407,7 @@
     {
       "english": "reason",
       "russian": "причина, повод",
-      "status": "not-checked",
+      "status": "queue",
       "id": 2996
     },
     {
@@ -20008,7 +20008,7 @@
     {
       "english": "scorn",
       "russian": "презрение, насмешка",
-      "status": "not-checked",
+      "status": "queue",
       "id": 3259
     },
     {
@@ -20159,7 +20159,7 @@
     {
       "english": "seduce",
       "russian": "соблазнять",
-      "status": "not-checked",
+      "status": "queue",
       "id": 3284
     },
     {
@@ -20552,7 +20552,7 @@
     {
       "english": "shell",
       "russian": "оболочка, скорлупа, раковина",
-      "status": "not-checked",
+      "status": "learned",
       "id": 3349
     },
     {
@@ -21157,7 +21157,7 @@
     {
       "english": "soak",
       "russian": "впитываться, просачиваться, всасывать",
-      "status": "not-checked",
+      "status": "queue",
       "id": 3447
     },
     {
@@ -21326,7 +21326,7 @@
     {
       "english": "sorrow",
       "russian": "горе",
-      "status": "not-checked",
+      "status": "queue",
       "id": 3475
     },
     {
@@ -21859,7 +21859,7 @@
     {
       "english": "stick",
       "russian": "приклеиваться",
-      "status": "not-checked",
+      "status": "learned",
       "id": 3562
     },
     {
@@ -25717,7 +25717,7 @@
     {
       "english": "cite",
       "russian": "ссылаться, цитировать",
-      "status": "not-checked",
+      "status": "learned",
       "id": 4196
     },
     {
@@ -25980,7 +25980,7 @@
     {
       "english": "curious",
       "russian": "любопытный",
-      "status": "not-checked",
+      "status": "learned",
       "id": 4239
     },
     {
@@ -28550,7 +28550,7 @@
     {
       "english": "secondary",
       "russian": "вторичный, второстепенный, побочный",
-      "status": "not-checked",
+      "status": "queue",
       "id": 4662
     },
     {
@@ -28736,7 +28736,7 @@
     {
       "english": "slope",
       "russian": "наклон, склон, скат",
-      "status": "not-checked",
+      "status": "queue",
       "id": 4692
     },
     {
@@ -29150,7 +29150,7 @@
     {
       "english": "ticket",
       "russian": "билет",
-      "status": "not-checked",
+      "status": "learned",
       "id": 4760
     },
     {
@@ -29751,7 +29751,7 @@
     {
       "english": "exhaust",
       "russian": "истощать, выматывать",
-      "status": "not-checked",
+      "status": "queue",
       "id": 4859
     },
     {
@@ -30159,7 +30159,7 @@
     {
       "english": "rubber",
       "russian": "резина",
-      "status": "not-checked",
+      "status": "learned",
       "id": 4926
     },
     {
@@ -30348,7 +30348,7 @@
     {
       "english": "vanity",
       "russian": "тщеславие",
-      "status": "not-checked",
+      "status": "queue",
       "id": 4957
     },
     {
