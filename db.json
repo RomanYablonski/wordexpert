@@ -653,7 +653,7 @@
       "russian": "утверждать, подтверждать",
       "status": "in-progress",
       "id": 106,
-      "successes": -0.5,
+      "successes": 0,
       "wasMistaked": true
     },
     {
@@ -782,7 +782,7 @@
       "russian": "нездоровье",
       "status": "in-progress",
       "id": 126,
-      "successes": 0,
+      "successes": 2,
       "wasMistaked": true
     },
     {
@@ -812,10 +812,11 @@
     {
       "english": "akin",
       "russian": "сходный, близкий, похожий",
-      "status": "in-progress",
+      "status": "on-repeat",
       "id": 131,
-      "successes": 1.5,
-      "wasMistaked": true
+      "successes": 0,
+      "wasMistaked": true,
+      "date": "2018-05-01T19:23:09.798Z"
     },
     {
       "english": "alarm",
@@ -1195,10 +1196,11 @@
     {
       "english": "antipathy",
       "russian": "отвращение, несовместимость",
-      "status": "in-progress",
+      "status": "on-repeat",
       "id": 192,
-      "successes": 3,
-      "wasMistaked": true
+      "successes": 0,
+      "wasMistaked": true,
+      "date": "2018-05-01T19:15:42.165Z"
     },
     {
       "english": "anxiety",
@@ -1702,7 +1704,7 @@
       "russian": "злодеяние или что-то отвратительное",
       "status": "in-progress",
       "id": 274,
-      "successes": -1.5,
+      "successes": -2.5,
       "wasMistaked": true
     },
     {
@@ -1794,7 +1796,7 @@
       "russian": "привлекательность или привлечение",
       "status": "in-progress",
       "id": 289,
-      "successes": 1
+      "successes": 3
     },
     {
       "english": "attractive",
@@ -2047,7 +2049,7 @@
     {
       "english": "bang",
       "russian": "удар, стук, звук взрыва/ударять, греметь",
-      "status": "queue",
+      "status": "in-progress",
       "id": 330,
       "successes": 0
     },
@@ -2272,8 +2274,9 @@
     {
       "english": "beans",
       "russian": "бобы",
-      "status": "queue",
-      "id": 366
+      "status": "in-progress",
+      "id": 366,
+      "successes": 2
     },
     {
       "english": "bear",
@@ -2855,7 +2858,7 @@
       "russian": "скука",
       "status": "in-progress",
       "id": 459,
-      "successes": 1
+      "successes": 3
     },
     {
       "english": "boring",
@@ -4307,8 +4310,10 @@
     {
       "english": "coax",
       "russian": "упрашивать, добиваться",
-      "status": "queue",
-      "id": 692
+      "status": "in-progress",
+      "id": 692,
+      "successes": -0.5,
+      "wasMistaked": true
     },
     {
       "english": "coherent",
@@ -5096,8 +5101,10 @@
     {
       "english": "contentious",
       "russian": "спорный или вздорный (человек)",
-      "status": "queue",
-      "id": 819
+      "status": "in-progress",
+      "id": 819,
+      "successes": 0.5,
+      "wasMistaked": true
     },
     {
       "english": "contest",
@@ -5398,7 +5405,7 @@
       "russian": "противное, обратное/противостоять",
       "status": "in-progress",
       "id": 867,
-      "successes": 0.5,
+      "successes": 2.5,
       "wasMistaked": true
     },
     {
@@ -6219,8 +6226,10 @@
     {
       "english": "degrade",
       "russian": "убавлять, уменьшать, приходить в упадок",
-      "status": "queue",
-      "id": 998
+      "status": "in-progress",
+      "id": 998,
+      "successes": -0.5,
+      "wasMistaked": true
     },
     {
       "english": "delay",
@@ -8443,8 +8452,9 @@
     {
       "english": "eternal",
       "russian": "вечный, неизменный",
-      "status": "queue",
-      "id": 1354
+      "status": "in-progress",
+      "id": 1354,
+      "successes": 0
     },
     {
       "english": "eternity",
@@ -9641,7 +9651,7 @@
       "russian": "плавать, всплывать",
       "status": "in-progress",
       "id": 1549,
-      "successes": 0.5,
+      "successes": 0,
       "wasMistaked": true
     },
     {
@@ -9895,7 +9905,7 @@
       "russian": "ковать",
       "status": "in-progress",
       "id": 1589,
-      "successes": 0,
+      "successes": 2,
       "wasMistaked": true
     },
     {
@@ -10691,10 +10701,11 @@
     {
       "english": "government",
       "russian": "правительство или управление",
-      "status": "in-progress",
+      "status": "on-repeat",
       "id": 1717,
-      "successes": 1.5,
-      "wasMistaked": true
+      "successes": 0,
+      "wasMistaked": true,
+      "date": "2018-05-01T19:19:35.203Z"
     },
     {
       "english": "governor",
@@ -12322,7 +12333,7 @@
       "russian": "необходимый, обязательный",
       "status": "in-progress",
       "id": 1981,
-      "successes": -0.5,
+      "successes": -1.5,
       "wasMistaked": true
     },
     {
@@ -12755,8 +12766,9 @@
     {
       "english": "intense",
       "russian": "сильный, интенсивный",
-      "status": "queue",
-      "id": 2049
+      "status": "in-progress",
+      "id": 2049,
+      "successes": 0
     },
     {
       "english": "intend",
@@ -15005,8 +15017,10 @@
     {
       "english": "missile",
       "russian": "ракета",
-      "status": "queue",
-      "id": 2415
+      "status": "in-progress",
+      "id": 2415,
+      "successes": -0.5,
+      "wasMistaked": true
     },
     {
       "english": "misuse",
@@ -15259,9 +15273,10 @@
     {
       "english": "mud",
       "russian": "грязь",
-      "status": "in-progress",
+      "status": "learned-new",
       "id": 2457,
-      "successes": 3
+      "successes": 0,
+      "date": "2018-05-01T19:06:04.925Z"
     },
     {
       "english": "multiple",
@@ -16156,7 +16171,7 @@
       "russian": "устаревший",
       "status": "in-progress",
       "id": 2603,
-      "successes": -1,
+      "successes": 1,
       "wasMistaked": true
     },
     {
@@ -16658,8 +16673,9 @@
     {
       "english": "pave",
       "russian": "мостить",
-      "status": "queue",
-      "id": 2683
+      "status": "in-progress",
+      "id": 2683,
+      "successes": 1
     },
     {
       "english": "pavement",
@@ -18568,7 +18584,7 @@
       "russian": "королевство",
       "status": "in-progress",
       "id": 2992,
-      "successes": -0.5,
+      "successes": 1.5,
       "wasMistaked": true
     },
     {
@@ -18639,10 +18655,11 @@
     {
       "english": "recall",
       "russian": "вспоминать или напоминать",
-      "status": "in-progress",
+      "status": "on-repeat",
       "id": 3003,
-      "successes": 2,
-      "wasMistaked": true
+      "successes": 0,
+      "wasMistaked": true,
+      "date": "2018-05-01T19:20:37.618Z"
     },
     {
       "english": "recall",
@@ -20564,7 +20581,7 @@
       "russian": "ряд,серия",
       "status": "in-progress",
       "id": 3316,
-      "successes": 0,
+      "successes": 2,
       "wasMistaked": true
     },
     {
@@ -20588,9 +20605,10 @@
     {
       "english": "serve",
       "russian": "подавать еду",
-      "status": "in-progress",
+      "status": "learned-new",
       "id": 3320,
-      "successes": 3
+      "successes": 0,
+      "date": "2018-05-01T19:06:21.466Z"
     },
     {
       "english": "serve",
@@ -21531,7 +21549,7 @@
       "russian": "сложный, запутанный, изощрённый",
       "status": "in-progress",
       "id": 3473,
-      "successes": 0.5,
+      "successes": 2.5,
       "wasMistaked": true
     },
     {
@@ -22220,7 +22238,7 @@
       "russian": "душить или задыхаться",
       "status": "in-progress",
       "id": 3585,
-      "successes": -0.5,
+      "successes": 0,
       "wasMistaked": true
     },
     {
@@ -23073,10 +23091,11 @@
     {
       "english": "tedious",
       "russian": "скучный, утомительный",
-      "status": "in-progress",
+      "status": "on-repeat",
       "id": 3724,
-      "successes": 3,
-      "wasMistaked": true
+      "successes": 0,
+      "wasMistaked": true,
+      "date": "2018-05-01T19:15:50.890Z"
     },
     {
       "english": "temporary",
@@ -23188,7 +23207,7 @@
       "russian": "страх, ужас",
       "status": "in-progress",
       "id": 3742,
-      "successes": -0.5,
+      "successes": 1.5,
       "wasMistaked": true
     },
     {
@@ -24210,8 +24229,9 @@
     {
       "english": "unconscious",
       "russian": "бессознательный, неосознанный или не осознающий",
-      "status": "queue",
-      "id": 3910
+      "status": "in-progress",
+      "id": 3910,
+      "successes": 0
     },
     {
       "english": "uncover",
@@ -24290,7 +24310,7 @@
       "russian": "неспокойный",
       "status": "in-progress",
       "id": 3923,
-      "successes": 1,
+      "successes": 3,
       "wasMistaked": true
     },
     {
@@ -25855,7 +25875,7 @@
       "russian": "рассчёт, обдумывание",
       "status": "in-progress",
       "id": 4180,
-      "successes": -0.5,
+      "successes": 1.5,
       "wasMistaked": true
     },
     {
@@ -26210,9 +26230,10 @@
     {
       "english": "curiosity",
       "russian": "любопытство",
-      "status": "in-progress",
+      "status": "learned-new",
       "id": 4238,
-      "successes": 2
+      "successes": 0,
+      "date": "2018-05-01T19:20:18.670Z"
     },
     {
       "english": "curious",
@@ -26567,7 +26588,7 @@
       "russian": "преувеличивать",
       "status": "in-progress",
       "id": 4297,
-      "successes": 0.5,
+      "successes": 2.5,
       "wasMistaked": true
     },
     {
@@ -26912,7 +26933,7 @@
       "russian": "избавиться",
       "status": "in-progress",
       "id": 4352,
-      "successes": 0,
+      "successes": 2,
       "wasMistaked": true
     },
     {
@@ -29194,7 +29215,7 @@
       "russian": "прогулка/прогуливаться",
       "status": "in-progress",
       "id": 4725,
-      "successes": -1,
+      "successes": -0.5,
       "wasMistaked": true
     },
     {
