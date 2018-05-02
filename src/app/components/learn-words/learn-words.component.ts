@@ -18,8 +18,6 @@ export class LearnWordsComponent implements OnInit {
   public correctAnswers = 0;
   public mistake;
   public mistakeAnswers = 0;
-  public inQueue = 0;
-  public inProgress = 0;
   public inputLength = 0;
   public finish = false;
 
@@ -31,34 +29,40 @@ export class LearnWordsComponent implements OnInit {
   ngOnInit() {
     this.wordService.getWords()
       .subscribe((words) => {
-        words.forEach((word) => {
-          if (word.status === 'queue') {
-            this.inQueue++;
-            this.QueueWordsList.push(word);
-          } else if (word.status === 'in-progress') {
-            this.inProgress++;
-            this.ProgressWordsList.push(word);
-          }
-        });
+        this.progressQueueFilter(words);
         if (this.ProgressWordsList.length < 30) {
-          this.makeRandomization(this.QueueWordsList);
-          const length = this.ProgressWordsList.length;
-          for (let i = 1; i <= 30 - length; i++) {
-            const word = this.QueueWordsList[i - 1];
-            if (word) {
-              word.status = 'in-progress';
-              word.successes = 0;
-              this.wordService.updateWord(word).subscribe((responce) => {
-                console.log(responce);
-              });
-              this.ProgressWordsList.push(word);
-            } else {
-              alert('Not enough words in Queue!');
-            }
-          }
+          this.addFromQueue();
         }
         this.makeRandomization(this.ProgressWordsList);
       });
+  }
+
+  public progressQueueFilter(words) {
+    words.forEach((word) => {
+      if (word.status === 'queue') {
+        this.QueueWordsList.push(word);
+      } else if (word.status === 'in-progress') {
+        this.ProgressWordsList.push(word);
+      }
+    });
+  }
+
+  public addFromQueue() {
+    this.makeRandomization(this.QueueWordsList);
+    const length = this.ProgressWordsList.length;
+    for (let i = 1; i <= 30 - length; i++) {
+      const word = this.QueueWordsList[i - 1];
+      if (word) {
+        word.status = 'in-progress';
+        word.successes = 0;
+        this.wordService.updateWord(word).subscribe((responce) => {
+          console.log(responce);
+        });
+        this.ProgressWordsList.push(word);
+      } else {
+        alert('Not enough words in Queue!');
+      }
+    }
   }
 
   public get currentWord() {
@@ -143,12 +147,19 @@ export class LearnWordsComponent implements OnInit {
     return this.currentWord.successes;
   }
 
+  public get inProgress() {
+    return this.ProgressWordsList.length;
+  }
+
+  public get inQueue() {
+    return this.QueueWordsList.length;
+  }
+
   public get frameUrl() {
     return this.sanitizer.bypassSecurityTrustResourceUrl(`https://dictionary.cambridge.org/dictionary/english/${this.currentWord.english}`);
   }
 
   public makeRandomization(arr) {
-    console.log(arr);
     for (let i = 0; i < arr.length; i++) {
       const j = Math.floor(Math.random() * arr.length);
       [arr[i], arr[j]] = [arr[j], arr[i]];
