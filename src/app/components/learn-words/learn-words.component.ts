@@ -22,8 +22,8 @@ export class LearnWordsComponent implements OnInit {
   public finish = false;
 
 
-  constructor(private wordService: WordService,
-              private sanitizer: DomSanitizer) {
+  constructor(public wordService: WordService,
+              public sanitizer: DomSanitizer) {
   }
 
   ngOnInit() {

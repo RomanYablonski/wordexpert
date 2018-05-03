@@ -10,6 +10,7 @@ import { LearnWordsComponent } from './components/learn-words/learn-words.compon
 import {WordService} from './shared/services/word.service';
 import { HttpClientModule } from '@angular/common/http';
 import {EnglishPipe} from './shared/pipes/english-transform.pipe';
+import { RepeatWordsComponent } from './components/repeat-words/repeat-words.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {EnglishPipe} from './shared/pipes/english-transform.pipe';
     AddWordsComponent,
     CheckWordsComponent,
     LearnWordsComponent,
-    EnglishPipe
+    EnglishPipe,
+    RepeatWordsComponent
   ],
   imports: [
     BrowserModule,

@@ -7,9 +7,14 @@ import {Pipe, PipeTransform} from '@angular/core';
 export class EnglishPipe implements PipeTransform {
   transform(value: string): any {
     const arr = value.split('');
+    const wordsArr = value.split(' ');
     for (let i = 1; i < arr.length - 1; i++) {
       arr[i] = ' _ ';
     }
-    return arr.join('') + ' (' + arr.length + ') ';
+    if (wordsArr.length > 1) {
+      return arr.join('') + ' (' + arr.length + ') ' + ' (' + wordsArr.length + ') ';
+    } else {
+      return arr.join('') + ' (' + arr.length + ') ';
+    }
   }
 }
