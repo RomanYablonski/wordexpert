@@ -21,4 +21,5 @@ export class WordService extends BaseApi {
   updateWord(word): Observable<Word> {
     return this.put(`allwords/${word.id}`, word);
   }
+
 }
