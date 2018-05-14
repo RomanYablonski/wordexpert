@@ -130,18 +130,18 @@
       "russian": "нелепый, глупый, смехотворный",
       "status": "on-repeat",
       "id": 21,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:29:53.973Z"
+      "date": "2018-05-13T14:39:52.414Z"
     },
     {
       "english": "abundance",
       "russian": "избыток, изобилие",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 22,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T07:29:36.981Z"
+      "date": "2018-05-13T14:58:52.143Z"
     },
     {
       "english": "abundant",
@@ -453,11 +453,11 @@
     {
       "english": "addiction",
       "russian": "привычка, пристрастие",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 72,
-      "successes": 1,
+      "successes": 0,
       "wasMistaked": true,
-      "date": "2018-04-29T11:45:07.544Z"
+      "date": "2018-05-13T14:59:43.911Z"
     },
     {
       "english": "addition",
@@ -1534,11 +1534,11 @@
     {
       "english": "ashamed",
       "russian": "пристыженный, стыдящийся",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 241,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T07:58:59.678Z"
+      "date": "2018-05-13T14:27:49.664Z"
     },
     {
       "english": "aside",
@@ -1616,9 +1616,9 @@
       "russian": "собрание, агрегат",
       "status": "on-repeat",
       "id": 253,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:03:37.504Z"
+      "date": "2018-05-13T14:35:30.038Z"
     },
     {
       "english": "assert",
@@ -1629,11 +1629,11 @@
     {
       "english": "assertion",
       "russian": "утверждение, заявление",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 255,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T08:56:28.266Z"
+      "date": "2018-05-13T14:29:17.830Z"
     },
     {
       "english": "assess",
@@ -1697,9 +1697,9 @@
       "russian": "удивление, изумление",
       "status": "on-repeat",
       "id": 265,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-29T10:47:51.575Z"
+      "date": "2018-05-13T15:02:27.174Z"
     },
     {
       "english": "astound",
@@ -1716,11 +1716,11 @@
     {
       "english": "asylum",
       "russian": "убежище, приют или дурдом",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 268,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T07:22:30.876Z"
+      "date": "2018-05-13T14:38:46.873Z"
     },
     {
       "english": "at all",
@@ -1919,11 +1919,11 @@
     {
       "english": "authorize",
       "russian": "уполномочивать, оправдывать, давать право",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 300,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-07T05:30:40.414Z"
+      "date": "2018-05-13T15:01:40.891Z"
     },
     {
       "english": "availability",
@@ -2174,8 +2174,9 @@
     {
       "english": "bar",
       "russian": "полоса металла, прут, решетка (мн.ч)",
-      "status": "queue",
-      "id": 340
+      "status": "in-progress",
+      "id": 340,
+      "successes": 0
     },
     {
       "english": "barbarian",
@@ -2426,18 +2427,18 @@
       "russian": "порождать",
       "status": "on-repeat",
       "id": 379,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:27:59.024Z"
+      "date": "2018-05-13T15:02:42.931Z"
     },
     {
       "english": "beggar",
       "russian": "нищий",
       "status": "on-repeat",
       "id": 380,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:58:38.829Z"
+      "date": "2018-05-13T15:00:28.887Z"
     },
     {
       "english": "behalf",
@@ -2677,9 +2678,9 @@
       "russian": "пустой, чистый",
       "status": "on-repeat",
       "id": 419,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T10:02:34.634Z"
+      "date": "2018-05-13T14:29:52.191Z"
     },
     {
       "english": "blanket",
@@ -2749,9 +2750,9 @@
       "russian": "мерцать, блеснуть/мерцание, блеск",
       "status": "on-repeat",
       "id": 430,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-29T13:14:06.034Z"
+      "date": "2018-05-13T15:02:21.437Z"
     },
     {
       "english": "block",
@@ -2917,9 +2918,9 @@
       "russian": "попойка/пьянствовать",
       "status": "on-repeat",
       "id": 456,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-07T05:49:46.651Z"
+      "date": "2018-05-13T14:28:26.046Z"
     },
     {
       "english": "border",
@@ -3446,11 +3447,11 @@
     {
       "english": "by chance",
       "russian": "случайно",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 540,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:41:15.352Z"
+      "date": "2018-05-13T14:40:04.282Z"
     },
     {
       "english": "cab",
@@ -3505,9 +3506,9 @@
       "russian": "спокойствие, невозмутимость",
       "status": "on-repeat",
       "id": 549,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:25:57.689Z"
+      "date": "2018-05-13T15:00:48.849Z"
     },
     {
       "english": "camel",
@@ -3929,11 +3930,11 @@
     {
       "english": "advance",
       "russian": "продвигаться вперёд/продвижение, прогресс, улучшение",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 616,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T07:39:09.819Z"
+      "date": "2018-05-13T15:02:08.909Z"
     },
     {
       "english": "changeable",
@@ -3973,9 +3974,9 @@
       "russian": "целомудрие, воздержание",
       "status": "on-repeat",
       "id": 622,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T08:01:06.210Z"
+      "date": "2018-05-13T14:34:44.584Z"
     },
     {
       "english": "chat",
@@ -4252,11 +4253,11 @@
     {
       "english": "clearly",
       "russian": "очевидно, несомненно",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 666,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:15:10.340Z"
+      "date": "2018-05-13T14:37:56.205Z"
     },
     {
       "english": "clergy",
@@ -4414,9 +4415,9 @@
       "russian": "покрытие",
       "status": "on-repeat",
       "id": 691,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:06:53.216Z"
+      "date": "2018-05-13T15:03:04.787Z"
     },
     {
       "english": "coax",
@@ -4932,9 +4933,9 @@
       "russian": "бетон/бетонный",
       "status": "on-repeat",
       "id": 773,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-07T07:28:25.087Z"
+      "date": "2018-05-13T14:36:17.390Z"
     },
     {
       "english": "condemn",
@@ -5071,11 +5072,11 @@
     {
       "english": "consequence",
       "russian": "последствие",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 795,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T08:06:54.730Z"
+      "date": "2018-05-13T14:35:49.633Z"
     },
     {
       "english": "consistent",
@@ -5104,11 +5105,11 @@
     {
       "english": "consolation",
       "russian": "утешение",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 799,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:41:34.424Z"
+      "date": "2018-05-13T14:28:54.866Z"
     },
     {
       "english": "console",
@@ -5472,9 +5473,9 @@
       "russian": "труп",
       "status": "on-repeat",
       "id": 856,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T08:58:03.087Z"
+      "date": "2018-05-13T14:39:48.624Z"
     },
     {
       "english": "correctness",
@@ -5725,11 +5726,11 @@
     {
       "english": "creed",
       "russian": "вероучение или убеждение",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 894,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:20:53.049Z"
+      "date": "2018-05-13T14:35:03.775Z"
     },
     {
       "english": "creep",
@@ -5872,11 +5873,11 @@
     {
       "english": "crush",
       "russian": "раздавить, уничтожить",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 917,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:15:02.027Z"
+      "date": "2018-05-13T15:00:59.012Z"
     },
     {
       "english": "cry",
@@ -6151,9 +6152,9 @@
       "russian": "большое количество",
       "status": "on-repeat",
       "id": 961,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:00:54.890Z"
+      "date": "2018-05-13T14:28:09.453Z"
     },
     {
       "english": "dealer",
@@ -6232,9 +6233,9 @@
       "russian": "обман",
       "status": "on-repeat",
       "id": 973,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:15:16.445Z"
+      "date": "2018-05-13T15:02:16.367Z"
     },
     {
       "english": "decide",
@@ -6656,9 +6657,9 @@
       "russian": "описывать, изображать",
       "status": "on-repeat",
       "id": 1039,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:47:45.963Z"
+      "date": "2018-05-13T14:27:09.932Z"
     },
     {
       "english": "description",
@@ -7000,9 +7001,9 @@
       "russian": "достоинство, благородство, титул",
       "status": "on-repeat",
       "id": 1094,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:43:59.609Z"
+      "date": "2018-05-13T14:28:06.497Z"
     },
     {
       "english": "diminish",
@@ -7205,11 +7206,11 @@
     {
       "english": "discretion",
       "russian": "осмотрительность, усмотрение, благоразумие",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 1127,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T10:02:01.412Z"
+      "date": "2018-05-13T14:33:56.828Z"
     },
     {
       "english": "discriminate",
@@ -7282,9 +7283,9 @@
       "russian": "не любить/нелюбовь",
       "status": "on-repeat",
       "id": 1138,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-29T11:19:37.704Z"
+      "date": "2018-05-13T14:27:40.175Z"
     },
     {
       "english": "dishearten",
@@ -7385,11 +7386,11 @@
     {
       "english": "dissolve",
       "russian": "растворяться",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 1154,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-07T05:45:53.118Z"
+      "date": "2018-05-13T14:28:42.318Z"
     },
     {
       "english": "distance",
@@ -8147,9 +8148,9 @@
       "russian": "красноречивый, выразительный",
       "status": "on-repeat",
       "id": 1274,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T08:01:30.858Z"
+      "date": "2018-05-13T15:00:34.893Z"
     },
     {
       "english": "else",
@@ -8480,9 +8481,9 @@
       "russian": "давать право",
       "status": "on-repeat",
       "id": 1326,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-29T11:07:51.079Z"
+      "date": "2018-05-13T14:40:16.505Z"
     },
     {
       "english": "entity",
@@ -8575,9 +8576,9 @@
       "russian": "равновесие",
       "status": "on-repeat",
       "id": 1340,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-29T12:06:13.420Z"
+      "date": "2018-05-13T14:39:38.778Z"
     },
     {
       "english": "equip",
@@ -8980,9 +8981,9 @@
       "russian": "ожидание",
       "status": "on-repeat",
       "id": 1405,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-07T05:28:11.559Z"
+      "date": "2018-05-13T14:27:28.062Z"
     },
     {
       "english": "expel",
@@ -9004,18 +9005,18 @@
       "russian": "трата, расход",
       "status": "on-repeat",
       "id": 1408,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-30T08:15:33.284Z"
+      "date": "2018-05-13T14:29:00.358Z"
     },
     {
       "english": "expire",
       "russian": "истекать, терять силу, умирать",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 1409,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T06:57:08.068Z"
+      "date": "2018-05-13T14:27:20.323Z"
     },
     {
       "english": "expensive",
@@ -9315,9 +9316,9 @@
       "russian": "ошибка, заблуждение",
       "status": "on-repeat",
       "id": 1454,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T08:08:45.842Z"
+      "date": "2018-05-13T14:28:38.213Z"
     },
     {
       "english": "false",
@@ -9360,9 +9361,9 @@
       "russian": "голод",
       "status": "on-repeat",
       "id": 1461,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:46:46.195Z"
+      "date": "2018-05-13T14:36:11.837Z"
     },
     {
       "english": "famous",
@@ -9444,11 +9445,11 @@
     {
       "english": "fate",
       "russian": "судьба, удел",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 1474,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:05:57.443Z"
+      "date": "2018-05-13T14:29:37.262Z"
     },
     {
       "english": "fat-free",
@@ -9500,9 +9501,9 @@
       "russian": "польза, интерес (\"в ч-л. пользу\")",
       "status": "on-repeat",
       "id": 1482,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T10:07:38.796Z"
+      "date": "2018-05-13T15:01:56.594Z"
     },
     {
       "english": "favorable",
@@ -9583,9 +9584,9 @@
       "russian": "питаться",
       "status": "on-repeat",
       "id": 1495,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:00:52.475Z"
+      "date": "2018-05-13T14:29:44.127Z"
     },
     {
       "english": "feel",
@@ -10142,9 +10143,9 @@
       "russian": "предки",
       "status": "on-repeat",
       "id": 1583,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-05T15:40:43.620Z"
+      "date": "2018-05-13T14:59:30.881Z"
     },
     {
       "english": "forehead",
@@ -10742,11 +10743,11 @@
     {
       "english": "get down",
       "russian": "опуститься",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 1679,
-      "successes": 1,
+      "successes": 0,
       "wasMistaked": true,
-      "date": "2018-04-29T11:16:35.341Z"
+      "date": "2018-05-13T14:30:08.517Z"
     },
     {
       "english": "get in touch",
@@ -10774,7 +10775,7 @@
       "russian": "подарок/дарить",
       "status": "in-progress",
       "id": 1683,
-      "successes": 2
+      "successes": 3
     },
     {
       "english": "gift",
@@ -10881,9 +10882,9 @@
       "russian": "внешний блеск, глянец",
       "status": "on-repeat",
       "id": 1700,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:12:49.298Z"
+      "date": "2018-05-13T15:00:38.538Z"
     },
     {
       "english": "go mad",
@@ -11208,11 +11209,11 @@
     {
       "english": "grudge",
       "russian": "недовольство, недоброжелательство",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 1753,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-05T15:45:37.021Z"
+      "date": "2018-05-13T15:02:37.396Z"
     },
     {
       "english": "guard",
@@ -11766,9 +11767,9 @@
       "russian": "шоссе, большая дорога",
       "status": "on-repeat",
       "id": 1840,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:47:15.064Z"
+      "date": "2018-05-13T15:02:59.802Z"
     },
     {
       "english": "hill",
@@ -13352,9 +13353,9 @@
       "russian": "призывать, вызывать",
       "status": "on-repeat",
       "id": 2086,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-07T05:35:33.538Z"
+      "date": "2018-05-13T15:00:22.947Z"
     },
     {
       "english": "involve",
@@ -13397,7 +13398,7 @@
       "russian": "неразумный",
       "status": "in-progress",
       "id": 2092,
-      "successes": -0.5,
+      "successes": -1,
       "wasMistaked": true
     },
     {
@@ -14321,8 +14322,9 @@
     {
       "english": "living room",
       "russian": "гостиная, зал, общая комната",
-      "status": "queue",
-      "id": 2243
+      "status": "in-progress",
+      "id": 2243,
+      "successes": 0
     },
     {
       "english": "lizard",
@@ -14389,9 +14391,9 @@
       "russian": "определять местонахождение или располагать",
       "status": "on-repeat",
       "id": 2254,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T10:01:45.192Z"
+      "date": "2018-05-13T14:39:57.376Z"
     },
     {
       "english": "location",
@@ -14546,9 +14548,9 @@
       "russian": "удача",
       "status": "on-repeat",
       "id": 2279,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-05T15:39:37.601Z"
+      "date": "2018-05-13T14:35:33.113Z"
     },
     {
       "english": "lower",
@@ -14559,11 +14561,11 @@
     {
       "english": "lowly",
       "russian": "скромный, непритязательный",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 2281,
-      "successes": 1,
+      "successes": 0,
       "wasMistaked": true,
-      "date": "2018-04-29T10:56:37.938Z"
+      "date": "2018-05-13T14:36:44.941Z"
     },
     {
       "english": "loyal",
@@ -14774,9 +14776,9 @@
       "russian": "особняк, большой дом, дворец",
       "status": "on-repeat",
       "id": 2316,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T08:09:52.757Z"
+      "date": "2018-05-13T15:00:18.141Z"
     },
     {
       "english": "manual",
@@ -14948,9 +14950,9 @@
       "russian": "спичка",
       "status": "on-repeat",
       "id": 2343,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:26:06.231Z"
+      "date": "2018-05-13T14:40:10.772Z"
     },
     {
       "english": "match",
@@ -15782,7 +15784,7 @@
       "russian": "гадкий, отвратительный",
       "status": "in-progress",
       "id": 2475,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true
     },
     {
@@ -16615,11 +16617,11 @@
     {
       "english": "outlook",
       "russian": "кругозор, точка зрения",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 2610,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:12:57.884Z"
+      "date": "2018-05-13T14:29:55.733Z"
     },
     {
       "english": "output",
@@ -17006,11 +17008,11 @@
     {
       "english": "pastime",
       "russian": "времяпрепровождение",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 2671,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T10:02:40.461Z"
+      "date": "2018-05-13T14:59:12.346Z"
     },
     {
       "english": "pasture",
@@ -17047,9 +17049,9 @@
       "russian": "жалкий",
       "status": "on-repeat",
       "id": 2677,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:45:57.374Z"
+      "date": "2018-05-13T14:30:03.993Z"
     },
     {
       "english": "patience",
@@ -17378,9 +17380,9 @@
       "russian": "поднять, подобрать, забрать",
       "status": "on-repeat",
       "id": 2729,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-29T10:52:15.711Z"
+      "date": "2018-05-13T14:30:15.571Z"
     },
     {
       "english": "picture",
@@ -17465,9 +17467,9 @@
       "russian": "бесить",
       "status": "on-repeat",
       "id": 2742,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:29:14.552Z"
+      "date": "2018-05-13T14:27:04.943Z"
     },
     {
       "english": "pit",
@@ -18047,7 +18049,7 @@
       "russian": "занятый, поглощённый",
       "status": "in-progress",
       "id": 2836,
-      "successes": -0.5,
+      "successes": -1,
       "wasMistaked": true
     },
     {
@@ -18113,8 +18115,9 @@
     {
       "english": "pretend",
       "russian": "притворяться",
-      "status": "queue",
-      "id": 2847
+      "status": "in-progress",
+      "id": 2847,
+      "successes": 0
     },
     {
       "english": "pretense",
@@ -18220,9 +18223,9 @@
       "russian": "предшествующий или более важный, первейший",
       "status": "on-repeat",
       "id": 2864,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:13:59.580Z"
+      "date": "2018-05-13T15:01:52.209Z"
     },
     {
       "english": "probably",
@@ -18505,9 +18508,9 @@
       "russian": "защитный",
       "status": "on-repeat",
       "id": 2908,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:12:27.280Z"
+      "date": "2018-05-13T14:39:28.125Z"
     },
     {
       "english": "proud",
@@ -18949,9 +18952,9 @@
       "russian": "неосторожный, опрометчивый, необдуманный / кожная сыпь",
       "status": "on-repeat",
       "id": 2978,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T08:09:57.346Z"
+      "date": "2018-05-13T14:30:20.364Z"
     },
     {
       "english": "rat",
@@ -19140,9 +19143,9 @@
       "russian": "расписка в получении, квитанция",
       "status": "on-repeat",
       "id": 3007,
-      "successes": 1,
+      "successes": 2,
       "wasMistaked": true,
-      "date": "2018-04-29T13:11:57.439Z"
+      "date": "2018-05-13T14:37:22.455Z"
     },
     {
       "english": "receive",
@@ -19358,9 +19361,9 @@
       "russian": "получить вновь (....in)",
       "status": "on-repeat",
       "id": 3041,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-05T15:39:53.924Z"
+      "date": "2018-05-13T14:35:20.389Z"
     },
     {
       "english": "regard",
@@ -19409,9 +19412,9 @@
       "russian": "царствовать",
       "status": "on-repeat",
       "id": 3049,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:41:51.825Z"
+      "date": "2018-05-13T15:00:14.403Z"
     },
     {
       "english": "reinforce",
@@ -19766,9 +19769,9 @@
       "russian": "просьба, запрос/просить",
       "status": "on-repeat",
       "id": 3106,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-05T15:42:01.118Z"
+      "date": "2018-05-13T14:34:49.156Z"
     },
     {
       "english": "requirement",
@@ -20060,11 +20063,11 @@
     {
       "english": "revile",
       "russian": "оскорблять, ругать",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 3153,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T08:58:20.239Z"
+      "date": "2018-05-13T14:38:14.620Z"
     },
     {
       "english": "revise",
@@ -20561,11 +20564,11 @@
     {
       "english": "sanity",
       "russian": "вменяемость, здравомыслие",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 3233,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:05:42.068Z"
+      "date": "2018-05-13T14:37:00.378Z"
     },
     {
       "english": "satellite",
@@ -20596,9 +20599,9 @@
       "russian": "дикий/дикарь",
       "status": "on-repeat",
       "id": 3238,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:14:30.978Z"
+      "date": "2018-05-13T14:59:56.737Z"
     },
     {
       "english": "saucer",
@@ -20755,9 +20758,9 @@
       "russian": "скоблить, скрести",
       "status": "on-repeat",
       "id": 3264,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:35:51.683Z"
+      "date": "2018-05-13T14:28:20.937Z"
     },
     {
       "english": "scratch",
@@ -20782,9 +20785,9 @@
       "russian": "трахать, совокупляться",
       "status": "on-repeat",
       "id": 3268,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:23:13.660Z"
+      "date": "2018-05-13T14:29:48.383Z"
     },
     {
       "english": "screw",
@@ -20880,11 +20883,11 @@
     {
       "english": "seduce",
       "russian": "соблазнять",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 3284,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T06:53:27.947Z"
+      "date": "2018-05-13T15:02:53.026Z"
     },
     {
       "english": "seduction",
@@ -20913,11 +20916,11 @@
     {
       "english": "seemingly",
       "russian": "видимо",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 3289,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T10:02:08.264Z"
+      "date": "2018-05-13T14:37:36.791Z"
     },
     {
       "english": "seek after",
@@ -21349,7 +21352,7 @@
       "russian": "нехватка, дефицит",
       "status": "in-progress",
       "id": 3357,
-      "successes": -0.5,
+      "successes": -1,
       "wasMistaked": true
     },
     {
@@ -21690,9 +21693,9 @@
       "russian": "слабый, дряблый, вялый",
       "status": "on-repeat",
       "id": 3412,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T10:11:18.329Z"
+      "date": "2018-05-13T14:30:26.722Z"
     },
     {
       "english": "slacken",
@@ -21777,9 +21780,9 @@
       "russian": "скользкий",
       "status": "on-repeat",
       "id": 3426,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:27:38.931Z"
+      "date": "2018-05-13T14:38:03.403Z"
     },
     {
       "english": "slim",
@@ -21975,11 +21978,11 @@
     {
       "english": "solemn",
       "russian": "торжественный, важный, серьёзный",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 3458,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:03:32.291Z"
+      "date": "2018-05-13T14:36:31.592Z"
     },
     {
       "english": "solid",
@@ -22086,9 +22089,9 @@
       "russian": "горе",
       "status": "on-repeat",
       "id": 3475,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-07T07:31:24.143Z"
+      "date": "2018-05-13T14:28:30.268Z"
     },
     {
       "english": "sorry",
@@ -22799,9 +22802,9 @@
       "russian": "напряжение, давление",
       "status": "on-repeat",
       "id": 3590,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T06:46:43.404Z"
+      "date": "2018-05-13T15:00:09.977Z"
     },
     {
       "english": "stream",
@@ -23461,9 +23464,9 @@
       "russian": "сочувствие",
       "status": "on-repeat",
       "id": 3696,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-07T05:21:00.540Z"
+      "date": "2018-05-13T14:59:20.473Z"
     },
     {
       "english": "table",
@@ -24588,11 +24591,11 @@
     {
       "english": "trying",
       "russian": "трудный, тяжёлый, мучительный",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 3878,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T10:07:52.877Z"
+      "date": "2018-05-13T14:27:55.747Z"
     },
     {
       "english": "tube",
@@ -24919,9 +24922,9 @@
       "russian": "несчастливый, неудачный",
       "status": "on-repeat",
       "id": 3930,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T10:02:13.461Z"
+      "date": "2018-05-13T14:36:03.307Z"
     },
     {
       "english": "unfortunately",
@@ -27251,8 +27254,9 @@
     {
       "english": "extensive",
       "russian": "обширный, пространный",
-      "status": "queue",
-      "id": 4306
+      "status": "in-progress",
+      "id": 4306,
+      "successes": 0
     },
     {
       "english": "fair",
@@ -27827,7 +27831,7 @@
       "russian": "лицемерие",
       "status": "in-progress",
       "id": 4398,
-      "successes": -1,
+      "successes": -1.5,
       "wasMistaked": true
     },
     {
@@ -28939,7 +28943,7 @@
       "russian": "узник, пленник",
       "status": "in-progress",
       "id": 4578,
-      "successes": 2
+      "successes": 3
     },
     {
       "english": "privacy",
@@ -29296,7 +29300,7 @@
     {
       "english": "resume",
       "russian": "возобновлять или получать обратно",
-      "status": "queue",
+      "status": "in-progress",
       "id": 4637,
       "successes": 0,
       "wasMistaked": true,
@@ -29394,9 +29398,9 @@
       "russian": "заведённый порядок",
       "status": "on-repeat",
       "id": 4652,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T07:36:11.851Z"
+      "date": "2018-05-13T14:29:33.921Z"
     },
     {
       "english": "sanction",
@@ -29637,11 +29641,11 @@
     {
       "english": "smack",
       "russian": "хлопать, шлёпать/хлопание",
-      "status": "on-repeat",
+      "status": "queue",
       "id": 4691,
       "successes": 0,
       "wasMistaked": true,
-      "date": "2018-05-06T09:06:56.328Z"
+      "date": "2018-05-13T14:29:27.473Z"
     },
     {
       "english": "slope",
@@ -31358,9 +31362,9 @@
       "russian": "неравенство, несоответствие",
       "status": "on-repeat",
       "id": 4970,
-      "successes": 0,
+      "successes": 1,
       "wasMistaked": true,
-      "date": "2018-05-06T09:13:54.293Z"
+      "date": "2018-05-13T14:28:14.793Z"
     },
     {
       "english": "disorderly",
