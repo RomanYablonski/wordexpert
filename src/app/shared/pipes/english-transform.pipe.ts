@@ -8,7 +8,7 @@ export class EnglishPipe implements PipeTransform {
   transform(value: string, wordSuccesses: number): any {
     const arr = value.split('');
     const wordsArr = value.split(' ');
-    let cutter = wordSuccesses > 2 ? 0 : 1;
+    const cutter = wordSuccesses > 2 ? 0 : 1;
     for (let i = cutter; i < arr.length - cutter; i++) {
       arr[i] = ' _ ';
     }
