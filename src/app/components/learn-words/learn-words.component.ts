@@ -13,6 +13,7 @@ export class LearnWordsComponent implements OnInit {
 
   public QueueWordsList = [];
   public ProgressWordsList = [];
+  public IncorrectWords = [];
   public currentWordIndex = 1;
   public correct;
   public correctAnswers = 0;
@@ -98,6 +99,7 @@ export class LearnWordsComponent implements OnInit {
       this.mistakeAnswers++;
       currentWord.successes = currentWord.successes > 0 ? 0 : currentWord.successes - 0.5;
       currentWord.wasMistaked = true;
+      this.IncorrectWords.push(currentWord);
     }
     this.wordService.updateWord(currentWord).subscribe((responce) => {
       console.log(responce);

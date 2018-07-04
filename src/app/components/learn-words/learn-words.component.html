@@ -19,7 +19,12 @@
   <div class="correct" *ngIf="correct">Correct!</div>
   <div class="mistake" *ngIf="mistake">Mistake :(</div>
 </div>
-<div *ngIf="finish" class="finish">Finish!</div>
+<div *ngIf="finish" class="finish">
+  <h2>Finish!</h2>
+  <ol>
+    <li *ngFor="let incorrectWord of IncorrectWords">{{incorrectWord.english}} - {{incorrectWord.russian}}</li>
+  </ol>
+</div>
 <div *ngIf="mistake" class="frame">
   <iframe [src]="frameUrl"></iframe>
 </div>

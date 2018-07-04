@@ -10,6 +10,8 @@ import {DomSanitizer} from '@angular/platform-browser';
 })
 export class RepeatWordsComponent extends LearnWordsComponent implements OnInit {
   public currentDate = new Date();
+  public testArr = [];
+
 
   constructor(public wordService: WordService,
               public sanitizer: DomSanitizer) {
@@ -21,7 +23,6 @@ export class RepeatWordsComponent extends LearnWordsComponent implements OnInit 
       .subscribe((words) => {
         this.repeatFilter(words);
         this.makeRandomization(this.ProgressWordsList);
-        console.log(this.ProgressWordsList);
       });
   }
 
@@ -31,6 +32,8 @@ export class RepeatWordsComponent extends LearnWordsComponent implements OnInit 
       if (word.status === 'on-repeat') {
         if ((dateDifference > 6 && word.successes < 1) || (dateDifference > 13 && word.successes < 2) || (dateDifference > 20 && word.successes < 3) || (dateDifference > 27 && word.successes < 4) || (dateDifference > 34 && word.successes < 5)) {
           this.ProgressWordsList.push(word);
+        } else {
+          word.dateDifference = dateDifference;
         }
       }
     });
