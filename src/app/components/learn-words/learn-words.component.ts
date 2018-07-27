@@ -1,6 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {WordService} from '../../shared/services/word.service';
 import {DomSanitizer} from '@angular/platform-browser';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-learn-words',
@@ -24,7 +25,8 @@ export class LearnWordsComponent implements OnInit {
 
 
   constructor(public wordService: WordService,
-              public sanitizer: DomSanitizer) {
+              public sanitizer: DomSanitizer,
+              public location: Location) {
   }
 
   ngOnInit() {

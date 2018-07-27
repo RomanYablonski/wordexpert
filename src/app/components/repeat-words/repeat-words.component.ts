@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {WordService} from '../../shared/services/word.service';
 import {LearnWordsComponent} from '../learn-words/learn-words.component';
 import {DomSanitizer} from '@angular/platform-browser';
+import {Location} from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-repeat-words',
@@ -11,12 +13,6 @@ import {DomSanitizer} from '@angular/platform-browser';
 export class RepeatWordsComponent extends LearnWordsComponent implements OnInit {
   public currentDate = new Date();
   public testArr = [];
-
-
-  constructor(public wordService: WordService,
-              public sanitizer: DomSanitizer) {
-    super(wordService, sanitizer);
-  }
 
   ngOnInit() {
     this.wordService.getWords()
