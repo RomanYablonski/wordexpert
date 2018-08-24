@@ -63,7 +63,7 @@ export class LearnWordsComponent implements OnInit {
         });
         this.ProgressWordsList.push(word);
       } else {
-        alert('Not enough words in Queue!');
+        break;
       }
     }
   }
