@@ -13222,8 +13222,9 @@
     {
       "english": "income",
       "russian": "доход (периодический)",
-      "status": "queue",
-      "id": 1968
+      "status": "in-progress",
+      "id": 1968,
+      "successes": 0
     },
     {
       "english": "incompatible",
