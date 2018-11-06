@@ -41,10 +41,10 @@ export class RepeatWordsComponent extends LearnWordsComponent implements OnInit 
       this.correct = true;
       this.correctAnswers++;
       currentWord.successes++;
-      if (currentWord.successes > 4) {
-        currentWord.status = 'learned-new';
-        currentWord.successes = 0;
-      }
+      // if (currentWord.successes > 4) {
+      //   currentWord.status = 'learned-new';
+      //   currentWord.successes = 0;
+      // }
     } else {
       this.mistake = true;
       this.mistakeAnswers++;
