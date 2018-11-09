@@ -12,7 +12,6 @@ import {Router} from '@angular/router';
 })
 export class RepeatWordsComponent extends LearnWordsComponent implements OnInit {
   public currentDate = new Date();
-  public testArr = [];
 
   ngOnInit() {
     this.wordService.getWords()
