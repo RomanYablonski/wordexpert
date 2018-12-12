@@ -54,14 +54,16 @@ export class LearnWordsComponent implements OnInit {
     this.makeRandomization(this.QueueWordsList);
     const length = this.ProgressWordsList.length;
     for (let i = 1; i <= 30 - length; i++) {
-      const word = this.QueueWordsList[i - 1];
+      const queueWordsListLength = this.QueueWordsList.length;
+      const word = this.QueueWordsList[queueWordsListLength - 1];
       if (word) {
         word.status = 'in-progress';
         word.successes = 0;
-        this.wordService.updateWord(word).subscribe((responce) => {
-          console.log(responce);
+        this.wordService.updateWord(word).subscribe((response) => {
+          console.log(response);
         });
         this.ProgressWordsList.push(word);
+        this.QueueWordsList.pop();
       } else {
         break;
       }
