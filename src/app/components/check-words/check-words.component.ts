@@ -81,9 +81,7 @@ export class CheckWordsComponent implements OnInit {
       currentWord.status = 'queue';
     }
     this.notChecked--;
-    this.wordService.updateWord(currentWord).subscribe((responce) => {
-      console.log(responce);
-    });
+    this.wordService.updateWord(currentWord);
   }
 
   public get wasAnswered() {

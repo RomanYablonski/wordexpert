@@ -59,9 +59,7 @@ export class LearnWordsComponent implements OnInit {
       if (word) {
         word.status = 'in-progress';
         word.successes = 0;
-        this.wordService.updateWord(word).subscribe((response) => {
-          console.log(response);
-        });
+        this.wordService.updateWord(word);
         this.ProgressWordsList.push(word);
         this.QueueWordsList.pop();
       } else {
@@ -105,9 +103,7 @@ export class LearnWordsComponent implements OnInit {
       currentWord.wasMistaked = true;
       this.IncorrectWords.push(currentWord);
     }
-    this.wordService.updateWord(currentWord).subscribe((responce) => {
-      console.log(responce);
-    });
+    this.wordService.updateWord(currentWord);
   }
 
   public get wasAnswered() {

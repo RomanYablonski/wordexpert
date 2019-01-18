@@ -51,9 +51,7 @@ export class RepeatWordsComponent extends LearnWordsComponent implements OnInit 
       currentWord.successes = 0;
     }
     currentWord.date = new Date();
-    this.wordService.updateWord(currentWord).subscribe((responce) => {
-      console.log(responce);
-    });
+    this.wordService.updateWord(currentWord);
   }
 
 }
