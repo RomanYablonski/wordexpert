@@ -11,8 +11,8 @@ const routes: Routes = [
   {path: 'check-words', component: CheckWordsComponent},
   {path: 'learn-words', component: LearnWordsComponent},
   {path: 'repeat-words', component: RepeatWordsComponent},
-  {path: 'english', component: EnglishComponent}
-
+  {path: 'english', component: EnglishComponent},
+  {path: '', pathMatch: 'full', redirectTo: 'learn-words'},
 ];
 
 @NgModule({
