@@ -20,6 +20,6 @@ export class WordService extends BaseApi {
   }
 
   updateWord(word): void {
-    this.put(`allwords/${word.id}`, word).subscribe(res => {return});
+    this.put(`allwords/${word.id}`, word).subscribe(() => null);
   }
 }
