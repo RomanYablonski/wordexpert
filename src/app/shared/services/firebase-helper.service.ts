@@ -16,6 +16,8 @@ export class FirebaseHelperService {
     this.db.list(url).push(data);
   }
 
+  // https://github.com/angular/angularfire2/blob/HEAD/docs/rtdb/lists.md
+
   // public put(url: string = '', data: any = {}): Observable<any> {
   //   return this.http.put(this.getUrl(url), data);
   // }
