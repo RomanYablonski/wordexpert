@@ -4,5 +4,6 @@ export class Word {
     public russian: string,
     public status: string,
     public englishStatus?: string,
+    public id?: number
   ) {}
 }
