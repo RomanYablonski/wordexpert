@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { AngularFireDatabase } from '@angular/fire/database';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class FirebaseHelperService {
@@ -8,17 +9,17 @@ export class FirebaseHelperService {
   constructor(private db: AngularFireDatabase) {
   }
 
-  public get(url: string = ''): Observable<any> {
-    return this.db.list(url).valueChanges();
+  public get(url: string = 'allwords'): Observable<any> {
+    return this.db.list(url).snapshotChanges().pipe(map(words =>
+      words.map(word => ({ ...word.payload.val(), key: word.payload.key }))
+    ));
   }
 
-  public post(url: string = '', data: any = {}): void {
+  public post(url: string = 'allwords', data: any = {}): void {
     this.db.list(url).push(data);
   }
 
-  // https://github.com/angular/angularfire2/blob/HEAD/docs/rtdb/lists.md
-
-  // public put(url: string = '', data: any = {}): Observable<any> {
-  //   return this.http.put(this.getUrl(url), data);
-  // }
+  public put(word, url: string = 'allwords') {
+    this.db.list(url).update(word.key, word);
+  }
 }

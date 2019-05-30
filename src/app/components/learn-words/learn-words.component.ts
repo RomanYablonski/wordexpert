@@ -2,6 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {WordService} from '../../shared/services/word.service';
 import {DomSanitizer} from '@angular/platform-browser';
 import { Location } from '@angular/common';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-learn-words',
@@ -31,6 +32,7 @@ export class LearnWordsComponent implements OnInit {
 
   ngOnInit() {
     this.wordService.getWords()
+      .pipe(take(1))
       .subscribe((words) => {
         this.progressQueueFilter(words);
         if (this.ProgressWordsList.length < 30) {

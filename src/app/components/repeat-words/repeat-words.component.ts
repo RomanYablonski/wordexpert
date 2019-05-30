@@ -1,9 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {WordService} from '../../shared/services/word.service';
 import {LearnWordsComponent} from '../learn-words/learn-words.component';
-import {DomSanitizer} from '@angular/platform-browser';
-import {Location} from '@angular/common';
-import {Router} from '@angular/router';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-repeat-words',
@@ -15,6 +12,7 @@ export class RepeatWordsComponent extends LearnWordsComponent implements OnInit 
 
   ngOnInit() {
     this.wordService.getWords()
+      .pipe(take(1))
       .subscribe((words) => {
         this.repeatFilter(words);
         this.makeRandomization(this.ProgressWordsList);

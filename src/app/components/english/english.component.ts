@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {WordService} from '../../shared/services/word.service';
 import {Word} from '../../shared/models/word.model';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'english',
@@ -21,6 +22,7 @@ export class EnglishComponent implements OnInit {
 
   getAndPrepareWords() {
     this.wordService.getWords()
+      .pipe(take(1))
       .subscribe(words => {
         const queueWords = words.filter(word => {
           if (word.status === 'on-repeat' && word.englishStatus !== 'checked') {
@@ -41,6 +43,7 @@ export class EnglishComponent implements OnInit {
 
   findSimilarWords() {
     this.wordService.getWords()
+      .pipe(take(1))
       .subscribe(words => {
         const scores = [];
         words.forEach((word) => {

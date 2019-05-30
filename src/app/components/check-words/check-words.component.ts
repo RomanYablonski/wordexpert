@@ -1,5 +1,6 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {WordService} from '../../shared/services/word.service';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-check-words',
@@ -29,6 +30,7 @@ export class CheckWordsComponent implements OnInit {
 
   ngOnInit() {
     this.wordService.getWords()
+      .pipe(take(1))
       .subscribe((words) => {
         this.allWordsCount = words.length;
         const wordsList = [];

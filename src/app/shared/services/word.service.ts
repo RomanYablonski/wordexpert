@@ -18,10 +18,10 @@ export class WordService extends BaseApi {
   }
 
   getWords(): Observable<Word[]>  {
-    return this.firebaseHelper.get('allwords').pipe(tap(res => this.lastWords = res ));
+    return this.firebaseHelper.get('allwords').pipe(tap(res => this.lastWords = res));
   }
 
   updateWord(word): void {
-    this.put(`allwords/${word.id}`, word).subscribe(() => null);
+    this.firebaseHelper.put(word);
   }
 }

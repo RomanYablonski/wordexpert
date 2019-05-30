@@ -3,7 +3,8 @@ export class Word {
     public english: string,
     public russian: string,
     public status: string,
+    public key?: string,
     public englishStatus?: string,
-    public id?: number
+    public id?: number,
   ) {}
 }
