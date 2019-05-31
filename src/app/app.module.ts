@@ -14,6 +14,7 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FirebaseHelperService } from './shared/services/firebase-helper.service';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FirebaseHelperService } from './shared/services/firebase-helper.service
     LearnWordsComponent,
     EnglishPipe,
     RepeatWordsComponent,
-    EnglishComponent
+    EnglishComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

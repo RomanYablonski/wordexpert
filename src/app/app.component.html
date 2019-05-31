@@ -5,11 +5,8 @@
   </h1>
 </div>
 <nav>
-  <a routerLinkActive="active" routerLink="/add-words">Add Words</a>
-  <a routerLinkActive="active" routerLink="/check-words">Check Words</a>
-  <a routerLinkActive="active" routerLink="/learn-words">Learn Words</a>
-  <a routerLinkActive="active" routerLink="/repeat-words">Repeat Words</a>
-  <a routerLinkActive="active" routerLink="/english">English</a>
+  <a *ngFor="let link of links" routerLinkActive="active" [routerLink]="link.target">{{link.text}}</a>
 </nav>
+<app-login *ngIf="!userService.isLoggedIn"></app-login>
 <router-outlet></router-outlet>
 
