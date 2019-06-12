@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { UserService } from '../../shared/services/user.service';
 
 @Component({
@@ -7,11 +7,12 @@ import { UserService } from '../../shared/services/user.service';
 })
 
 export class LoginComponent {
-  private userPassword = '123456789876543';
+  @Output() onLogin = new EventEmitter();
   constructor(private userService: UserService) {
   }
 
   checkPassword(password: string) {
-    this.userService.isLoggedIn = password === this.userPassword
+    this.userService.checkPassword(password);
+    this.onLogin.emit(this.userService.checkIfLogged());
   }
 }

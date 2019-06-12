@@ -8,6 +8,6 @@ export class AuthGuard implements CanActivateChild {
   constructor(private userService: UserService){}
 
   canActivateChild() {
-    return this.userService.isLoggedIn;
+    return this.userService.checkIfLogged();
   }
 }

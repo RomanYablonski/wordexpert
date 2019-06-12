@@ -7,6 +7,6 @@
 <nav>
   <a *ngFor="let link of links" routerLinkActive="active" [routerLink]="link.target">{{link.text}}</a>
 </nav>
-<app-login *ngIf="!userService.isLoggedIn"></app-login>
+<app-login *ngIf="!isLoggedIn" (onLogin)="checkLogin()"></app-login>
 <router-outlet></router-outlet>
 
