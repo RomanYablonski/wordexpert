@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     { target: '/repeat-words', text: 'Repeat Words' },
     { target: '/english', text: 'English' },
   ];
-  private isLoggedIn: boolean;
+  public isLoggedIn: boolean;
   constructor(
     private wordsService: WordService,
     private userService: UserService
