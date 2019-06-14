@@ -73,7 +73,7 @@ export class CheckWordsComponent implements OnInit {
 
   public checkWord(answer) {
     const currentWord = this.currentWord;
-    if (answer === this.currentWord.english) {
+    if (String(answer).toLowerCase() === this.currentWord.english.toLowerCase()) {
       this.correct = true;
       this.learned++;
       currentWord.status = 'learned';
