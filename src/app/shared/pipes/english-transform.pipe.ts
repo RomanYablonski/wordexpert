@@ -5,11 +5,10 @@ import {Pipe, PipeTransform} from '@angular/core';
 })
 
 export class EnglishPipe implements PipeTransform {
-  transform(value: string, wordSuccesses: number): any {
+  transform(value: string, wordSuccesses?: number): any {
     const arr = value.split('');
     const wordsArr = value.split(' ');
-    const cutter = wordSuccesses > 2 ? 0 : 1;
-    for (let i = cutter; i < arr.length - cutter; i++) {
+    for (let i = 0; i < arr.length; i++) {
       arr[i] = ' _ ';
     }
     if (wordsArr.length > 1) {

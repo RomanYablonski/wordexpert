@@ -9,7 +9,7 @@
     <input type="text"
            #answer
            (keyup.enter) = "onEnter(answer.value)"
-           (keyup) = "onKeyUp()"
+           (keyup) = "onKeyUp(answer.value)"
     ><span>  {{inputLength}}</span>
     <div class="buttons">
       <button *ngIf="!wasAnswered" (click)="checkWord(answer.value)">Check</button>

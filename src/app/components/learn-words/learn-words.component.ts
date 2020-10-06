@@ -20,6 +20,7 @@ export class LearnWordsComponent implements OnInit {
   public correct;
   public correctAnswers = 0;
   public mistake;
+  discrepancy = false;
   public mistakeAnswers = 0;
   public inputLength = 0;
   public finish = false;
@@ -83,7 +84,7 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public checkWord(answer) {
+  public checkWord(answer: string, isFinal: boolean) {
     const currentWord = this.currentWord;
     if (String(answer).toLowerCase() === this.currentWord.english.toLowerCase()) {
       this.correct = true;
@@ -98,12 +99,14 @@ export class LearnWordsComponent implements OnInit {
         currentWord.successes = 0;
         currentWord.date = new Date();
       }
-    } else {
+    } else if (isFinal) {
       this.mistake = true;
       this.mistakeAnswers++;
       currentWord.successes = currentWord.successes > 0 ? 0 : currentWord.successes - 0.5;
       currentWord.wasMistaked = true;
       this.IncorrectWords.push(currentWord);
+    } else {
+      this.discrepancy = answer.length >= this.currentWord.english.length;
     }
     this.wordService.updateWord(currentWord);
   }
@@ -115,6 +118,7 @@ export class LearnWordsComponent implements OnInit {
   public reset() {
     this.correct = null;
     this.mistake = null;
+    this.discrepancy = null;
     this.answer.nativeElement.value = '';
   }
 
@@ -127,13 +131,14 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public onKeyUp() {
+  public onKeyUp(value: string) {
     this.inputLength = this.answer.nativeElement.value.length;
+    this.checkWord(value, false)
   }
 
-  public onEnter(value) {
+  public onEnter(value: string) {
     if (!this.wasAnswered) {
-      this.checkWord(value);
+      this.checkWord(value, true);
     } else {
       this.nextWord();
     }
@@ -169,4 +174,8 @@ export class LearnWordsComponent implements OnInit {
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
   }
+
+  // onFrameLoad() {
+  //   setTimeout(() => this.answer.nativeElement.focus, 1000);
+  // }
 }
