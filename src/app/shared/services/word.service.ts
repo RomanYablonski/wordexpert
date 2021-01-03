@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core';
-import {BaseApi} from './base-api';
-import { HttpClient } from '@angular/common/http';
-import {Word} from '../models/word.model';
-import {Observable} from 'rxjs';
+import { BaseApi } from './base-api';
+import { Word } from '../models/word.model';
+import { Observable } from 'rxjs';
 import { FirebaseHelperService } from './firebase-helper.service';
-import { tap } from 'rxjs/internal/operators/tap';
+import { tap } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class WordService extends BaseApi {

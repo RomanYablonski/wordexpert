@@ -11,7 +11,7 @@ export class FirebaseHelperService {
 
   public get(url: string = 'allwords'): Observable<any> {
     return this.db.list(url).snapshotChanges().pipe(map(words =>
-      words.map(word => ({ ...word.payload.val(), key: word.payload.key }))
+      words.map(word => ({ ...word.payload.val() as object, key: word.payload.key }))
     ));
   }
 
