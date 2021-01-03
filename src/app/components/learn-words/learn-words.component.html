@@ -13,7 +13,7 @@
            (keyup) = "onKeyUp(answer.value)"
     ><span>  {{inputLength}}</span>
     <div class="buttons">
-      <button *ngIf="!wasAnswered" (click)="checkWord(answer.value, true)">Check</button>
+      <button *ngIf="!wasAnswered" (click)="checkWord(answer.value)">Check</button>
       <button *ngIf="wasAnswered" (click)="nextWord()">Next word</button>
     </div>
   </div>

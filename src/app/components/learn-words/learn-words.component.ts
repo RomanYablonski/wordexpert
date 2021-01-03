@@ -84,7 +84,7 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public checkWord(answer: string, isFinal: boolean) {
+  public checkWord(answer: string) {
     const currentWord = this.currentWord;
     if (String(answer).toLowerCase() === this.currentWord.english.toLowerCase()) {
       this.correct = true;
@@ -99,16 +99,20 @@ export class LearnWordsComponent implements OnInit {
         currentWord.successes = 0;
         currentWord.date = new Date();
       }
-    } else if (isFinal) {
+    } else {
       this.mistake = true;
       this.mistakeAnswers++;
       currentWord.successes = currentWord.successes > 0 ? 0 : currentWord.successes - 0.5;
       currentWord.wasMistaked = true;
       this.IncorrectWords.push(currentWord);
-    } else {
-      this.discrepancy = answer.length >= this.currentWord.english.length;
     }
     this.wordService.updateWord(currentWord);
+  }
+
+  checkDiscrepancy(answer: string) {
+    if (String(answer).toLowerCase() !== this.currentWord.english.toLowerCase()) {
+      this.discrepancy = answer.length >= this.currentWord.english.length;
+    }
   }
 
   public get wasAnswered() {
@@ -133,12 +137,12 @@ export class LearnWordsComponent implements OnInit {
 
   public onKeyUp(value: string) {
     this.inputLength = this.answer.nativeElement.value.length;
-    this.checkWord(value, false)
+    this.checkDiscrepancy(value)
   }
 
   public onEnter(value: string) {
     if (!this.wasAnswered) {
-      this.checkWord(value, true);
+      this.checkWord(value);
     } else {
       this.nextWord();
     }
