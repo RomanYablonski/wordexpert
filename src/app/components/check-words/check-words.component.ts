@@ -11,18 +11,18 @@ export class CheckWordsComponent implements OnInit {
 
   @ViewChild('answer') answer: ElementRef;
 
-  public wordsList = [];
-  public currentWordIndex = 1;
-  public correct;
-  public mistake;
-  public learned = 0;
-  public queue = 0;
-  public inProgress = 0;
-  public notChecked = 0;
-  public onRepeat = 0;
-  public allWordsCount = 0;
-  public inputLength = 0;
-  public learnedNew = 0;
+  wordsList = [];
+  currentWordIndex = 1;
+  correct;
+  mistake;
+  learned = 0;
+  queue = 0;
+  inProgress = 0;
+  notChecked = 0;
+  onRepeat = 0;
+  allWordsCount = 0;
+  inputLength = 0;
+  learnedNew = 0;
 
 
   constructor(private wordService: WordService) {
@@ -58,7 +58,7 @@ export class CheckWordsComponent implements OnInit {
       });
   }
 
-  public get currentWord() {
+  get currentWord() {
     if (this.wordsList.length > 0) {
       return this.wordsList[this.currentWordIndex - 1];
     } else {
@@ -71,7 +71,7 @@ export class CheckWordsComponent implements OnInit {
     }
   }
 
-  public checkWord(answer) {
+  checkWord(answer) {
     const currentWord = this.currentWord;
     if (String(answer).toLowerCase() === this.currentWord.english.toLowerCase()) {
       this.correct = true;
@@ -86,34 +86,34 @@ export class CheckWordsComponent implements OnInit {
     this.wordService.updateWord(currentWord);
   }
 
-  public get wasAnswered() {
+  get wasAnswered() {
     return this.correct || this.mistake;
   }
 
-  public reset() {
+  reset() {
     this.correct = null;
     this.mistake = null;
     this.answer.nativeElement.value = '';
   }
 
-  public nextWord() {
+  nextWord() {
     this.reset();
     this.currentWordIndex++;
   }
 
-  public get success() {
+  get success() {
     return ((this.allWordsCount - this.notChecked) * 100 / this.allWordsCount).toFixed(2) + '%';
   }
 
-  public get rCoefficient() {
+  get rCoefficient() {
     return (this.learned * 100 / (this.allWordsCount - this.notChecked)).toFixed(2) + '%';
   }
 
-  public onKeyUp() {
+  onKeyUp() {
     this.inputLength = this.answer.nativeElement.value.length;
   }
 
-  public onEnter(value) {
+  onEnter(value) {
     if (!this.wasAnswered) {
       this.checkWord(value);
     } else {
@@ -121,7 +121,7 @@ export class CheckWordsComponent implements OnInit {
     }
   }
 
-  public get lnor() {
+  get lnor() {
     return this.onRepeat + this.learnedNew;
   }
 

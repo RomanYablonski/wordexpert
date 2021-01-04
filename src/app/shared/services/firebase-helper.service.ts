@@ -19,7 +19,7 @@ export class FirebaseHelperService {
     this.db.list(url).push(data);
   }
 
-  public put(word, url: string = 'allwords') {
-    this.db.list(url).update(word.key, word);
+  public put(word, url: string = 'allwords'): Promise<void> {
+    return this.db.list(url).update(word.key, word);
   }
 }

@@ -12,23 +12,25 @@ import { take } from 'rxjs/operators';
 export class LearnWordsComponent implements OnInit {
 
   @ViewChild('answer') answer: ElementRef;
+  @ViewChild('russianInput') russianInput: ElementRef;
+  @ViewChild('englishInput') englishInput: ElementRef;
 
-  public QueueWordsList = [];
-  public ProgressWordsList = [];
-  public IncorrectWords = [];
-  public currentWordIndex = 1;
-  public correct;
-  public correctAnswers = 0;
-  public mistake;
+  QueueWordsList = [];
+  ProgressWordsList = [];
+  IncorrectWords = [];
+  currentWordIndex = 1;
+  correct;
+  correctAnswers = 0;
+  mistake;
   discrepancy = false;
-  public mistakeAnswers = 0;
-  public inputLength = 0;
-  public finish = false;
+  mistakeAnswers = 0;
+  inputLength = 0;
+  finish = false;
+  editMode = false;
 
-
-  constructor(public wordService: WordService,
-              public sanitizer: DomSanitizer,
-              public location: Location) {
+  constructor(protected wordService: WordService,
+              protected sanitizer: DomSanitizer,
+              protected location: Location) {
   }
 
   ngOnInit() {
@@ -43,7 +45,7 @@ export class LearnWordsComponent implements OnInit {
       });
   }
 
-  public progressQueueFilter(words) {
+  progressQueueFilter(words) {
     words.forEach((word) => {
       if (word.status === 'queue') {
         this.QueueWordsList.push(word);
@@ -53,7 +55,7 @@ export class LearnWordsComponent implements OnInit {
     });
   }
 
-  public addFromQueue() {
+  addFromQueue() {
     this.makeRandomization(this.QueueWordsList);
     const length = this.ProgressWordsList.length;
     for (let i = 1; i <= 30 - length; i++) {
@@ -71,7 +73,7 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public get currentWord() {
+  get currentWord() {
     if (this.ProgressWordsList.length > 0) {
       return this.ProgressWordsList[this.currentWordIndex - 1];
     } else {
@@ -84,7 +86,7 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public checkWord(answer: string) {
+  checkWord(answer: string) {
     const currentWord = this.currentWord;
     if (String(answer).toLowerCase() === this.currentWord.english.toLowerCase()) {
       this.correct = true;
@@ -115,18 +117,18 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public get wasAnswered() {
+  get wasAnswered() {
     return this.correct || this.mistake;
   }
 
-  public reset() {
+  reset() {
     this.correct = null;
     this.mistake = null;
     this.discrepancy = null;
     this.answer.nativeElement.value = '';
   }
 
-  public nextWord() {
+  nextWord() {
     this.reset();
     if (this.currentWordIndex < this.ProgressWordsList.length) {
       this.currentWordIndex++;
@@ -135,12 +137,12 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public onKeyUp(value: string) {
+  onKeyUp(value: string) {
     this.inputLength = this.answer.nativeElement.value.length;
     this.checkDiscrepancy(value)
   }
 
-  public onEnter(value: string) {
+  onEnter(value: string) {
     if (!this.wasAnswered) {
       this.checkWord(value);
     } else {
@@ -148,38 +150,55 @@ export class LearnWordsComponent implements OnInit {
     }
   }
 
-  public get allAnswers() {
+  get allAnswers() {
     return this.correctAnswers + this.mistakeAnswers;
   }
 
-  public get wordStatus() {
+  get wordStatus() {
     return this.currentWord.status;
   }
 
-  public get wordSuccesses() {
+  get wordSuccesses() {
     return this.currentWord.successes;
   }
 
-  public get inProgress() {
+  get inProgress() {
     return this.ProgressWordsList.length;
   }
 
-  public get inQueue() {
+  get inQueue() {
     return this.QueueWordsList.length;
   }
 
-  public get frameUrl() {
+  get frameUrl() {
     return this.sanitizer.bypassSecurityTrustResourceUrl(`https://dictionary.cambridge.org/dictionary/english/${this.currentWord.english}`);
   }
 
-  public makeRandomization(arr) {
+  makeRandomization(arr) {
     for (let i = 0; i < arr.length; i++) {
       const j = Math.floor(Math.random() * arr.length);
       [arr[i], arr[j]] = [arr[j], arr[i]];
     }
   }
 
-  // onFrameLoad() {
-  //   setTimeout(() => this.answer.nativeElement.focus, 1000);
-  // }
+  enableEditMode() {
+    if (!this.wasAnswered) {
+      return
+    }
+    this.editMode = true;
+  }
+
+  onSave() {
+    const word = {
+      ...this.currentWord,
+      russian: this.russianInput.nativeElement.value,
+      english: this.englishInput.nativeElement.value,
+    };
+    this.wordService.updateWord(word).then(res => {
+      const currentWord = this.currentWord;
+      Object.assign(currentWord, word);
+      this.editMode= false;
+      console.log(this.currentWord);
+    })
+  }
 }

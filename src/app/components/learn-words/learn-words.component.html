@@ -1,9 +1,17 @@
 <div class="wrapper" *ngIf="!finish">
-  <div>
-    <span class="id">{{currentWord.id}}</span><span class="russian">. {{currentWord.russian}}</span></div>
+  <div (dblclick)="enableEditMode()">
+    <ng-container *ngIf="!editMode">
+      <span class="id">{{currentWord.id}}</span>
+      <span class="russian">. {{currentWord.russian}}</span>
+    </ng-container>
+    <input #russianInput *ngIf="editMode" type="text" [value]="currentWord.russian" (keyup.enter)="onSave()">
+  </div>
   <div *ngIf='!wasAnswered; else fullWord'>{{currentWord.english | english:wordSuccesses}}</div>
   <ng-template #fullWord>
-    <div>{{currentWord.english}}</div>
+    <div>
+      <span *ngIf="!editMode">{{currentWord.english}}</span>
+      <input #englishInput *ngIf="editMode" type="text" [value]="currentWord.english" (keyup.enter)="onSave()">
+    </div>
   </ng-template>
   <div class="input-wrapper">
     <input type="text"

@@ -1,6 +1,7 @@
 <div class="wrapper">
   <div>
-    <span class="id">{{currentWord.id}}</span><span class="russian">. {{currentWord.russian}}</span></div>
+    <span class="id">{{currentWord.id}}</span><span class="russian">. {{currentWord.russian}}</span>
+  </div>
   <div *ngIf='!wasAnswered; else fullWord'>{{currentWord.english | english}}</div>
   <ng-template #fullWord>
     <div>{{currentWord.english}}</div>

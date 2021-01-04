@@ -21,7 +21,7 @@ export class WordService extends BaseApi {
     return this.firebaseHelper.get('allwords').pipe(tap(res => this.lastWords = res));
   }
 
-  updateWord(word): void {
-    this.firebaseHelper.put(word);
+  updateWord(word): Promise<void> {
+    return this.firebaseHelper.put(word);
   }
 }
