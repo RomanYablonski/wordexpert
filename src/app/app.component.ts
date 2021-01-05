@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     { target: '/check-words', text: 'Check Words' },
     { target: '/learn-words', text: 'Learn Words' },
     { target: '/repeat-words', text: 'Repeat Words' },
-    { target: '/english', text: 'English' },
+    // { target: '/english', text: 'English' },
   ];
   public isLoggedIn: boolean;
   constructor(

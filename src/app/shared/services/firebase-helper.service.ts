@@ -15,8 +15,8 @@ export class FirebaseHelperService {
     ));
   }
 
-  public post(url: string = 'allwords', data: any = {}): void {
-    this.db.list(url).push(data);
+  public post(url: string = 'allwords', key: string, data: any = {}) {
+    return this.db.list(url).set(key, data);
   }
 
   public put(word, url: string = 'allwords'): Promise<void> {

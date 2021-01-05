@@ -81,7 +81,7 @@ export class LearnWordsComponent implements OnInit {
         english: 'loading',
         russian: 'loading',
         status: 'loading',
-        index: 'loading'
+        key: '0'
       };
     }
   }

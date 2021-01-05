@@ -1,7 +1,7 @@
 <div class="wrapper" *ngIf="!finish">
   <div (dblclick)="enableEditMode()">
     <ng-container *ngIf="!editMode">
-      <span class="id">{{currentWord.id}}</span>
+      <span class="id">{{currentWord.key}}</span>
       <span class="russian">. {{currentWord.russian}}</span>
     </ng-container>
     <input #russianInput *ngIf="editMode" type="text" [value]="currentWord.russian" (keyup.enter)="onSave()">

@@ -1,6 +1,17 @@
-<div>
-  <h2>Вставьте слова сюда</h2>
-  <textarea #wordslist
-  ></textarea>
-  <button (click)="addWords(wordslist.value)">Add</button>
+<div class="wrapper">
+  <h2>Add words</h2>
+  <div class="input-wrapper">
+    <input [disabled]="!loaded" #word type="text" placeholder="Word" (input)="onChangeWordInput($event)">
+  </div>
+  <div class="input-wrapper">
+    <input [disabled]="!loaded" #translation type="text" placeholder="Translation">
+  </div>
+  <button [disabled]="!loaded" (click)="addWord()">Add</button>
+
+  <div class="search-result">
+    <div class="search-item" [class.added]="isAlreadyAdded(item)" *ngFor="let item of searchResult"
+         (dblclick)="addExistingToLearn(item)">
+      {{item.key}} - <b>{{item.english}}</b> - {{item.russian}} - {{item.status }} ({{item.successes || 0}})
+    </div>
+  </div>
 </div>

@@ -13,8 +13,8 @@ export class WordService extends BaseApi {
     super(http);
   }
 
-  addWord(word: Word): void {
-    this.firebaseHelper.post('allwords', word);
+  addWord(key: string, word: Word) {
+    return this.firebaseHelper.post('allwords', key, word);
   }
 
   getWords(): Observable<Word[]>  {
