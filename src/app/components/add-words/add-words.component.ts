@@ -30,7 +30,6 @@ export class AddWordsComponent implements OnInit, OnDestroy {
 
   setWordList() {
     this.wordService.getWords().subscribe(res => {
-      console.log(res);
       this.wordsList = res;
       this.loaded = true;
     })
@@ -55,7 +54,7 @@ export class AddWordsComponent implements OnInit, OnDestroy {
     const newWord: Word = {
       english: english,
       russian: russian,
-      status: 'in-queue',
+      status: 'queue',
       wasMistaked: true,
       successes: 0
     };
@@ -86,7 +85,7 @@ export class AddWordsComponent implements OnInit, OnDestroy {
 
     const updatedWord: Word = {
       ...word,
-      status: 'in-queue',
+      status: 'queue',
       successes: 0,
       wasMistaked: true
     }
