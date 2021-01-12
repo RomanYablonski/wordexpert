@@ -1,8 +1,8 @@
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { WordService } from '../../shared/services/word.service';
-import { Subject } from 'rxjs/internal/Subject';
-import { debounceTime, distinctUntilChanged, take, takeUntil } from 'rxjs/operators';
+import { debounceTime, distinctUntilChanged, takeUntil } from 'rxjs/operators';
 import { Word } from '../../shared/models/word.model';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-add-words',
@@ -30,6 +30,7 @@ export class AddWordsComponent implements OnInit, OnDestroy {
 
   setWordList() {
     this.wordService.getWords().subscribe(res => {
+      console.log(res);
       this.wordsList = res;
       this.loaded = true;
     })
@@ -58,7 +59,7 @@ export class AddWordsComponent implements OnInit, OnDestroy {
       wasMistaked: true,
       successes: 0
     };
-    this.wordService.addWord(String(this.wordsList.length), newWord).then(res => this.clear())
+    this.wordService.addWord(String(this.wordsList.length + 1), newWord).then(res => this.clear())
   }
 
   clear() {
