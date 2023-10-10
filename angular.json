@@ -48,20 +48,24 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
-            }
+            },
+            "development": {}
           },
-          "defaultConfiguration": ""
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "wordsexpert:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "wordsexpert:build:production"
+            },
+            "development": {
+              "browserTarget": "wordsexpert:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -110,7 +114,8 @@
           "options": {
             "protractorConfig": "./protractor.conf.js",
             "devServerTarget": "wordsexpert:serve"
-          }
+          },
+          "configurations": {}
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
