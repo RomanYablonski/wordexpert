@@ -10,12 +10,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { EnglishPipe } from './shared/pipes/english-transform.pipe';
 import { RepeatWordsComponent } from './components/repeat-words/repeat-words.component';
 import { EnglishComponent } from './components/english/english.component';
-import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { FirebaseHelperService } from './shared/services/firebase-helper.service';
 import { LoginComponent } from './components/login/login.component';
 import {StatisticsComponent} from './components/statistics/statistics.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [
