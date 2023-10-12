@@ -171,7 +171,7 @@ export class LearnWordsComponent implements OnInit {
   }
 
   get frameUrl() {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(`https://dictionary.cambridge.org/dictionary/english/${this.currentWord.english}`);
+    return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.merriam-webster.com/dictionary/${this.currentWord.english}`);
   }
 
   makeRandomization(arr) {
