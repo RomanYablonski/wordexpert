@@ -131,7 +131,6 @@
       }
     }
   },
-  "defaultProject": "wordsexpert",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
