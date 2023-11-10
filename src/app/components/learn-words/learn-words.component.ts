@@ -92,7 +92,7 @@ export class LearnWordsComponent implements OnInit {
       this.correct = true;
       this.correctAnswers++;
       currentWord.successes++;
-      if (currentWord.successes > 3) {
+      if (currentWord.successes > 1) {
         if (currentWord.wasMistaked) {
           currentWord.status = 'on-repeat';
         } else {
